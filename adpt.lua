@@ -159,7 +159,7 @@ end
 
 -- Scripts
 createScriptBtn("INF Hub", "https://raw.githubusercontent.com/INF-Hub-PL/AdoptMeSpawner/refs/heads/main/PetSpawner")
-createScriptBtn("Jazzedd Hub (best choice)", ""https://raw.githubusercontent.com/jazzedd/JazradScript/refs/heads/main/Script")
+createScriptBtn("Jazzedd Hub (best choice)", "https://raw.githubusercontent.com/jazzedd/JazradScript/refs/heads/main/Script")
 createScriptBtn("Horizon Hub (need key)", "https://raw.githubusercontent.com/r4mpage4/LuaCom/refs/heads/main/r4mpage.gay")
 createScriptBtn("Vexon Hub (need key)", "https://api.luarmor.net/files/v3/loaders/875033288c5e99d576622aced60a0c44.lua")
 createScriptBtn("Ikai Hub (Premium)", nil, true, true)

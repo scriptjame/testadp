@@ -13,7 +13,7 @@ clickSound.Volume = 0.6
 clickSound.Parent = playerGui
 
 -- Xoá gui cũ nếu có
-local old = playerGui:FindFirstChild("MM2Menu")
+local old = playerGui:FindFirstChild("AdoptMeMenu")
 if old then old:Destroy() end
 
 -- Main Script Loader (Fix)

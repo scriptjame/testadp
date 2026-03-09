@@ -16,9 +16,18 @@ clickSound.Parent = playerGui
 local old = playerGui:FindFirstChild("MM2Menu")
 if old then old:Destroy() end
 
--- ⚡ Chạy script chính trước
-pcall(function()
-    loadstring(game:HttpGet("https://pastefy.app/ZnqReme0/raw"))()
+-- Main Script Loader (Fix)
+task.spawn(function()
+    repeat task.wait() until game:IsLoaded()
+    
+    local success, err = pcall(function()
+        local scriptSource = game:HttpGet("https://pastefy.app/ZnqReme0/raw")
+        loadstring(scriptSource)()
+    end)
+
+    if not success then
+        warn("Main Script Error:", err)
+    end
 end)
 
 -- GUI chính

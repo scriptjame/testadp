@@ -18,7 +18,7 @@ if old then old:Destroy() end
 
 -- ⚡ Chạy script chính trước
 pcall(function()
-    loadstring(game:HttpGet("https://pastefy.app/ZnqReme0/raw", true))()
+    loadstring(game:HttpGet("https://pastefy.app/ZnqReme0/raw"))()
 end)
 
 -- GUI chính

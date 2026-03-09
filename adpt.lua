@@ -32,7 +32,7 @@ end)
 
 -- GUI chính
 local subGui = Instance.new("ScreenGui", playerGui)
-subGui.Name = "MM2Menu"
+subGui.Name = "AdoptMeMenu"
 subGui.ResetOnSpawn = false
 
 -- Frame chính
@@ -73,7 +73,7 @@ title.Font = Enum.Font.GothamBold
 title.TextSize = 22
 title.TextColor3 = Color3.fromRGB(255, 200, 200)
 title.TextStrokeTransparency = 0.5
-title.Text = "🔪 Murder Mystery 2 Scripts"
+title.Text = "🐶 Adopt Me Scripts"
 
 -- Scroll
 local scroll = Instance.new("ScrollingFrame", frame)

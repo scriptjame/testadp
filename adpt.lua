@@ -158,13 +158,12 @@ local function createScriptBtn(text, url, premium, copyTikTok)
 end
 
 -- Scripts
-createScriptBtn("YARHM Hub", "https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua")
-createScriptBtn("Project Hub", "https://raw.githubusercontent.com/CycleScripts/Official/refs/heads/main/freemium")
-createScriptBtn("Horizon Hub need key", "https://pastefy.app/wwfom1bX/raw")
-createScriptBtn("Vexon Hub", "https://raw.githubusercontent.com/DiosDi/VexonHub/refs/heads/main/VexonHub")
-createScriptBtn("Rew Hub", "https://pastefy.app/2QUPuCOb/raw")
-createScriptBtn("Bacon Hub (Premium)", nil, true, true)
-createScriptBtn("Vertex Hub (Premium)", nil, true, true)
+createScriptBtn("INF Hub", "https://raw.githubusercontent.com/INF-Hub-PL/AdoptMeSpawner/refs/heads/main/PetSpawner")
+createScriptBtn("Jazzedd Hub (best choice)", ""https://raw.githubusercontent.com/jazzedd/JazradScript/refs/heads/main/Script")
+createScriptBtn("Horizon Hub (need key)", "https://raw.githubusercontent.com/r4mpage4/LuaCom/refs/heads/main/r4mpage.gay")
+createScriptBtn("Vexon Hub (need key)", "https://api.luarmor.net/files/v3/loaders/875033288c5e99d576622aced60a0c44.lua")
+createScriptBtn("Ikai Hub (Premium)", nil, true, true)
+createScriptBtn("Soseiwe Hub (Premium)", nil, true, true)
 
 -- Social buttons
 local socialFrame = Instance.new("Frame", frame)

@@ -1,4 +1,4 @@
--- 🔪 MM2 GUI phụ (hiện đại + auto resize + hiệu ứng + mạng xã hội nổi bật)
+-- 🐶 Adopt Me GUI phụ (hiện đại + auto resize + hiệu ứng + mạng xã hội nổi bật)
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local player = Players.LocalPlayer
@@ -7,18 +7,17 @@ local HttpService = game:GetService("HttpService")
 local setclipboard = setclipboard or toclipboard or set_clipboard
 
 -- Xoá gui cũ nếu có
-local old = playerGui:FindFirstChild("MM2Menu")
+local old = playerGui:FindFirstChild("AdoptMeMenu")
 if old then old:Destroy() end
 
--- ⚡ Chạy script chính trước (thay link Blade Ball → MM2)
+-- ⚡ Chạy script chính trước
 pcall(function()
-    -- ✅ Thay thế script chính ở đây bằng script MM2 bạn muốn chạy
     loadstring(game:HttpGet("https://pastefy.app/ZnqReme0/raw", true))()
 end)
 
 -- GUI chính
 local subGui = Instance.new("ScreenGui", playerGui)
-subGui.Name = "MM2Menu"
+subGui.Name = "AdoptMeMenu"
 subGui.ResetOnSpawn = false
 
 -- Frame chính
@@ -59,7 +58,7 @@ title.Font = Enum.Font.GothamBold
 title.TextSize = 22
 title.TextColor3 = Color3.fromRGB(255, 200, 200)
 title.TextStrokeTransparency = 0.5
-title.Text = "🔪 Murder Mystery 2 Scripts"
+title.Text = "🐶 Adopt Me Scripts"
 
 -- Scroll
 local scroll = Instance.new("ScrollingFrame", frame)
@@ -163,7 +162,7 @@ socialList.HorizontalAlignment = Enum.HorizontalAlignment.Center
 local socials = {
     {name="TikTok", color1=Color3.fromRGB(255,0,128), color2=Color3.fromRGB(0,255,255), link="www.tiktok.com/@renan1627"},
     {name="YouTube", color1=Color3.fromRGB(200,0,0), color2=Color3.fromRGB(255,100,100), link="https://www.youtube.com/@user-qe3dv7iy2j"},
-    {name="Discord", color1=Color3.fromRGB(88,101,242), color2=Color3.fromRGB(120,140,255), link="https://discord.gg/NgxXnRGRYp"},
+    {name="Discord", color1=Color3.fromRGB(88,101,242), color2=Color3.fromRGB(120,140,255), link="https://discord.gg/fkDMHngGCk"},
 }
 
 for _, s in ipairs(socials) do
@@ -193,7 +192,7 @@ for _, s in ipairs(socials) do
             Text = s.name .. " link copied to clipboard.",
             Duration = 4
         })
-    end)
+    end
 end
 
 -- Toggle nút

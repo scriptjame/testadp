@@ -364,14 +364,6 @@ local function createScriptBtn(text, url, premium, copyTikTok)
     scroll.CanvasSize = UDim2.new(0, 0, 0, list.AbsoluteContentSize.Y + 20)
 end
 
--- 🟢 Scripts
-createScriptBtn("INF Hub", "https://raw.githubusercontent.com/INF-Hub-PL/AdoptMeSpawner/refs/heads/main/PetSpawner")
-createScriptBtn("Jazzedd Hub (best choice)", "https://raw.githubusercontent.com/jazzedd/JazradScript/refs/heads/main/Script")
-createScriptBtn("R4m Hub (need key)", "https://raw.githubusercontent.com/r4mpage4/LuaCom/refs/heads/main/r4mpage.gay")
-createScriptBtn("Rage Hub (need key)", "https://api.luarmor.net/files/v3/loaders/875033288c5e99d576622aced60a0c44.lua")
-createScriptBtn("Ikai Hub (Premium)", nil, true, true)
-createScriptBtn("Soseiwe Hub (Premium)", nil, true, true)
-
 -- 🔥 Social buttons
 local socialFrame = Instance.new("Frame", frame)
 socialFrame.Size = UDim2.new(1, -20, 0, 45)

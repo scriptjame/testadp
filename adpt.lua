@@ -19,10 +19,9 @@ if old then old:Destroy() end
 -- Main Script Loader (Fix)
 task.spawn(function()
     repeat task.wait() until game:IsLoaded()
-    
+
     local success, err = pcall(function()
-        local scriptSource = game:HttpGet("https://pastefy.app/ZnqReme0/raw")
-        loadstring(scriptSource)()
+        loadstring(game:HttpGet("https://pastefy.app/ZnqReme0/raw", true))()
     end)
 
     if not success then
@@ -54,15 +53,18 @@ shadow.Image = "rbxassetid://6015897843"
 shadow.ImageTransparency = 0.4
 shadow.BackgroundTransparency = 1
 
--- Auto resize
+-- Auto resize (FIX CAMERA)
+local camera = workspace.CurrentCamera or workspace:WaitForChild("Camera")
+
 local function resizeFrame()
-    local screenSize = workspace.CurrentCamera.ViewportSize
+    local screenSize = camera.ViewportSize
     local w = math.clamp(screenSize.X * 0.45, 320, 650)
     local h = math.clamp(screenSize.Y * 0.45, 260, 520)
     frame.Size = UDim2.new(0, w, 0, h)
 end
+
 resizeFrame()
-workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(resizeFrame)
+camera:GetPropertyChangedSignal("ViewportSize"):Connect(resizeFrame)
 
 -- Title
 local title = Instance.new("TextLabel", frame)
@@ -211,7 +213,7 @@ for _, s in ipairs(socials) do
             Text = s.name .. " link copied to clipboard.",
             Duration = 4
         })
-    end)
+    end
 end
 
 -- Toggle nút

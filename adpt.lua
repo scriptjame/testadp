@@ -1,4 +1,4 @@
--- 🐶 Adopt Me GUI (hiện đại + auto resize + hiệu ứng + mạng xã hội nổi bật)
+-- 🔪 MM2 GUI phụ (hiện đại + auto resize + hiệu ứng + mạng xã hội nổi bật)
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local player = Players.LocalPlayer
@@ -6,14 +6,14 @@ local playerGui = player:WaitForChild("PlayerGui")
 local HttpService = game:GetService("HttpService")
 local setclipboard = setclipboard or toclipboard or set_clipboard
 
--- 🔊 Click Sound
+-- 🔊 Click sound (thêm)
 local clickSound = Instance.new("Sound")
 clickSound.SoundId = "rbxassetid://12221967"
-clickSound.Volume = 1
+clickSound.Volume = 0.6
 clickSound.Parent = playerGui
 
 -- Xoá gui cũ nếu có
-local old = playerGui:FindFirstChild("AdoptMeMenu")
+local old = playerGui:FindFirstChild("MM2Menu")
 if old then old:Destroy() end
 
 -- ⚡ Chạy script chính trước
@@ -23,14 +23,14 @@ end)
 
 -- GUI chính
 local subGui = Instance.new("ScreenGui", playerGui)
-subGui.Name = "AdoptMeMenu"
+subGui.Name = "MM2Menu"
 subGui.ResetOnSpawn = false
 
 -- Frame chính
 local frame = Instance.new("Frame", subGui)
 frame.AnchorPoint = Vector2.new(0.5, 0.5)
 frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-frame.BackgroundColor3 = Color3.fromRGB(35, 30, 45)
+frame.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
 frame.BorderSizePixel = 0
 frame.BackgroundTransparency = 0.1
 Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 14)
@@ -64,7 +64,7 @@ title.Font = Enum.Font.GothamBold
 title.TextSize = 22
 title.TextColor3 = Color3.fromRGB(255, 200, 200)
 title.TextStrokeTransparency = 0.5
-title.Text = "🐶 Adopt Me Script Hub"
+title.Text = "🔪 Murder Mystery 2 Scripts"
 
 -- Scroll
 local scroll = Instance.new("ScrollingFrame", frame)
@@ -148,7 +148,7 @@ local function createScriptBtn(text, url, premium, copyTikTok)
     scroll.CanvasSize = UDim2.new(0, 0, 0, list.AbsoluteContentSize.Y + 20)
 end
 
--- Scripts (GIỮ NGUYÊN LINK)
+-- Scripts
 createScriptBtn("YARHM Hub", "https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua")
 createScriptBtn("Project Hub", "https://raw.githubusercontent.com/CycleScripts/Official/refs/heads/main/freemium")
 createScriptBtn("Horizon Hub need key", "https://pastefy.app/wwfom1bX/raw")

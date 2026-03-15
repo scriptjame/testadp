@@ -118,11 +118,22 @@ local linkv = Instance.new("TextButton")
 linkv.Parent = frame
 linkv.Size = UDim2.new(0.35,0,0,35)
 linkv.Position = UDim2.new(0.1,0,0.55,0)
-linkv.Text = "Linkvertise"
+linkv.Text = "       Linkvertise"
 linkv.BackgroundColor3 = Color3.fromRGB(40,40,45)
 linkv.TextColor3 = Color3.new(1,1,1)
+linkv.Font = Enum.Font.Gotham
+linkv.TextSize = 14
+linkv.TextXAlignment = Enum.TextXAlignment.Left
 
 Instance.new("UICorner",linkv)
+
+local lvicon = Instance.new("Frame")
+lvicon.Parent = linkv
+lvicon.Size = UDim2.new(0,10,0,10)
+lvicon.Position = UDim2.new(0,10,0.5,-5)
+lvicon.BackgroundColor3 = Color3.fromRGB(255,210,0)
+
+Instance.new("UICorner",lvicon).CornerRadius = UDim.new(1,0)
 
 linkv.MouseButton1Click:Connect(function()
 
@@ -134,7 +145,7 @@ linkv.MouseButton1Click:Connect(function()
 
 	game.StarterGui:SetCore("SendNotification",{
 		Title = "Shiba",
-		Text = "Linkvertise copied",
+		Text = "Linkvertise link copied - paste in browser",
 		Duration = 4
 	})
 
@@ -145,11 +156,22 @@ local loot = Instance.new("TextButton")
 loot.Parent = frame
 loot.Size = UDim2.new(0.35,0,0,35)
 loot.Position = UDim2.new(0.55,0,0.55,0)
-loot.Text = "LootLabs"
+loot.Text = "       LootLabs"
 loot.BackgroundColor3 = Color3.fromRGB(40,40,45)
 loot.TextColor3 = Color3.new(1,1,1)
+loot.Font = Enum.Font.Gotham
+loot.TextSize = 14
+loot.TextXAlignment = Enum.TextXAlignment.Left
 
 Instance.new("UICorner",loot)
+
+local llicon = Instance.new("Frame")
+llicon.Parent = loot
+llicon.Size = UDim2.new(0,10,0,10)
+llicon.Position = UDim2.new(0,10,0.5,-5)
+llicon.BackgroundColor3 = Color3.fromRGB(170,80,255)
+
+Instance.new("UICorner",llicon).CornerRadius = UDim.new(1,0)
 
 loot.MouseButton1Click:Connect(function()
 
@@ -161,7 +183,7 @@ loot.MouseButton1Click:Connect(function()
 
 	game.StarterGui:SetCore("SendNotification",{
 		Title = "Shiba",
-		Text = "LootLabs copied",
+		Text = "LootLabs link copied - paste in browser",
 		Duration = 4
 	})
 

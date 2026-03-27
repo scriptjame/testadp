@@ -26,7 +26,7 @@ if isfile and isfile(keyFile) then
 	end)
 
 	if success then
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptjame/test2/refs/heads/main/loot.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptjame/testadp/refs/heads/main/loot.lua"))()
 		return
 	else
 		-- ❗ KHÔNG xoá key nữa → tránh hiện GUI lại
@@ -232,7 +232,7 @@ verify.MouseButton1Click:Connect(function()
 
 		gui:Destroy()
 
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptjame/test2/refs/heads/main/loot.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptjame/testadp/refs/heads/main/loot.lua"))()
 
 	else
 
